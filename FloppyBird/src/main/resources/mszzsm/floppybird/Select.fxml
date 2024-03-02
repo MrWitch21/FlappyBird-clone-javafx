@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mszzsm.floppybird.controllers.SelectMenuController">
+    <ImageView fitHeight="757.0" fitWidth="456.0" layoutY="-190.0" nodeOrientation="INHERIT">
+        <image>
+            <Image url="@../../background.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="141.0" fitWidth="456.0" layoutY="560.0">
+        <image>
+            <Image url="@../../floor.png" />
+        </image>
+        <smooth>true</smooth>
+    </ImageView>
+
+    <ImageView fitHeight="73.0" fitWidth="254.0" layoutX="101.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../title.png" />
+        </image>
+    </ImageView>
+
+    <ToggleButton fx:id="Normal" layoutX="58.0" layoutY="298.0" onAction="#updateImage" prefHeight="77.0" prefWidth="86.0" selected="true" styleClass="select-button" stylesheets="@style.css">
+        <graphic>
+            <ImageView fx:id="Normal_ImgV" fitHeight="77.0" fitWidth="85.0">
+                <Image url="@../../normal_selected.png" />
+            </ImageView>
+        </graphic>
+      <toggleGroup>
+         <ToggleGroup fx:id="toggleGroup" />
+      </toggleGroup>
+    </ToggleButton>
+    <ToggleButton fx:id="Multi" layoutX="185.0" layoutY="298.0" onAction="#updateImage" prefHeight="77.0" prefWidth="86.0" styleClass="select-button" stylesheets="@style.css" toggleGroup="$toggleGroup">
+    <graphic>
+        <ImageView fx:id="Multi_ImgV" fitHeight="77.0" fitWidth="85.0">
+            <Image url="@../../multi.png" />
+        </ImageView>
+    </graphic>
+    </ToggleButton>
+    <ToggleButton fx:id="Bot" layoutX="312.0" layoutY="298.0" onAction="#updateImage" prefHeight="77.0" prefWidth="86.0" styleClass="select-button" stylesheets="@style.css" toggleGroup="$toggleGroup">
+        <graphic>
+            <ImageView fx:id="Bot_ImgV" fitHeight="77.0" fitWidth="85.0">
+                <Image url="@../../bot.png" />
+            </ImageView>
+        </graphic>
+    </ToggleButton>
+
+        <Button layoutX="177.0" layoutY="404.0" mnemonicParsing="false" onAction="#playButtonClicked" prefHeight="34.0" prefWidth="104.0" styleClass="arcade-button" stylesheets="@style.css">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../../start.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="184.0" layoutY="489.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="40.0" prefWidth="86.0" styleClass="arcade-button" stylesheets="@style.css">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../../back.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+</AnchorPane>

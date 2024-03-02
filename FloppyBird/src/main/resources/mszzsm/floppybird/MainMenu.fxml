@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mszzsm.floppybird.controllers.MainMenuController">
+    <ImageView fitHeight="757.0" fitWidth="456.0" layoutY="-190.0" nodeOrientation="INHERIT">
+        <image>
+            <Image url="@../../background.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="141.0" fitWidth="456.0" layoutY="560.0">
+            <Image url="@../../floor.png" />
+        <smooth>true</smooth>
+    </ImageView>
+
+    <Button layoutX="201.0" layoutY="668.0" prefHeight="9.0" prefWidth="55.0" styleClass="arcade-button" stylesheets="@style.css" text="Ranglista" visible="false" />
+   <ImageView fitHeight="73.0" fitWidth="254.0" layoutX="101.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../title.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="39.0" fitWidth="84.0" layoutX="201.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../bird1.png" />
+      </image>
+   </ImageView>
+   <Slider fx:id="volumeSlider" layoutX="46.0" layoutY="15.0" prefHeight="14.0" prefWidth="70.0" />
+   <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../volume_icon.png" />
+      </image></ImageView>
+    <children>
+        <Button layoutX="77.0" layoutY="348.0" mnemonicParsing="false" onAction="#switchToSelect" prefHeight="73.0" prefWidth="90.0" styleClass="arcade-button" stylesheets="@style.css">
+            <graphic>
+                <ImageView fitHeight="73.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../playbtn.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="278.0" layoutY="348.0" onAction="#switchToLB" styleClass="arcade-button" stylesheets="@style.css">
+            <graphic>
+                <ImageView fitHeight="73.0" fitWidth="254.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../leaderbbuton.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="185.0" layoutY="485.0" mnemonicParsing="false" onAction="#exit" styleClass="arcade-button" stylesheets="@style.css">
+            <graphic>
+                <ImageView fitHeight="45.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../exit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

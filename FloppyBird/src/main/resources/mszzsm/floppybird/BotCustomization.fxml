@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mszzsm.floppybird.controllers.customization.CustomizationMenuController">
+    <ImageView fitHeight="757.0" fitWidth="456.0" layoutY="-190.0" nodeOrientation="INHERIT">
+        <image>
+            <Image url="@../../background.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="141.0" fitWidth="456.0" layoutY="560.0">
+        <Image url="@../../floor.png" />
+        <smooth>true</smooth>
+    </ImageView>
+
+    <Button layoutX="201.0" layoutY="668.0" prefHeight="9.0" prefWidth="55.0" styleClass="arcade-button" stylesheets="@style.css" text=".." visible="false" />
+    <ImageView fitHeight="73.0" fitWidth="254.0" layoutX="101.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../title.png" />
+        </image>
+    </ImageView>
+    <Button layoutX="175.0" layoutY="417.0" mnemonicParsing="false" onAction="#startGameBot" prefHeight="34.0" prefWidth="104.0" styleClass="arcade-button" stylesheets="@style.css">
+        <graphic>
+            <ImageView fitHeight="45.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../start.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button layoutX="192.0" layoutY="502.0" mnemonicParsing="false" onAction="#switchToSelect" prefHeight="31.0" prefWidth="71.0" styleClass="arcade-button" stylesheets="@style.css">
+        <graphic>
+            <ImageView fitHeight="31.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../back.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <ImageView fitHeight="88.0" fitWidth="78.0" layoutX="189.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../frame.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="88.0" fitWidth="78.0" layoutX="296.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../frame.png" />
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="player1_bird" fitHeight="62.0" fitWidth="63.0" layoutX="89.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="pipes" fitHeight="62.0" fitWidth="63.0" layoutX="197.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" />
+    <ImageView fx:id="background" fitHeight="62.0" fitWidth="63.0" layoutX="304.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true" />
+
+    <ImageView fitHeight="88.0" fitWidth="78.0" layoutX="82.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../frame.png" />
+    </ImageView>
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="101.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../arrow_down.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="bird_d" layoutX="105.0" layoutY="367.0" mnemonicParsing="false" onAction="#arrowDown" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" />
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="209.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../arrow_down.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="pipe_d" layoutX="213.0" layoutY="367.0" mnemonicParsing="false" onAction="#arrowDown" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" />
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="316.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../arrow_down.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="bg_d" layoutX="320.0" layoutY="367.0" mnemonicParsing="false" onAction="#arrowDown" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" />
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="101.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../arrow_up.png" />
+    </ImageView>
+    <Button fx:id="bird_u" layoutX="105.0" layoutY="256.0" mnemonicParsing="false" onAction="#arrowUp" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" text="bird" />
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="209.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../arrow_up.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="pipe_u" layoutX="213.0" layoutY="255.0" mnemonicParsing="false" onAction="#arrowUp" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" text="pipe" />
+    <ImageView fitHeight="26.0" fitWidth="39.0" layoutX="316.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../../arrow_up.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="bg_u" layoutX="320.0" layoutY="255.0" mnemonicParsing="false" onAction="#arrowUp" opacity="0.0" prefHeight="26.0" prefWidth="31.0" styleClass="arcade-button" stylesheets="@style.css" text="bg" />
+
+</AnchorPane>

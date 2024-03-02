@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="650.0" prefWidth="450.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mszzsm.floppybird.controllers.share.LeaderBoardController">
+    <ImageView fitHeight="141.0" fitWidth="456.0" layoutY="560.0">
+        <Image url="@../../floor.png" />
+        <smooth>true</smooth>
+    </ImageView>
+    <ImageView fitHeight="757.0" fitWidth="456.0" layoutY="-190.0" nodeOrientation="INHERIT">
+        <image>
+            <Image url="@../../background.png" />
+        </image>
+    </ImageView>
+   <AnchorPane focusTraversable="true" layoutX="62.0" layoutY="155.0" prefHeight="251.0" prefWidth="333.0">
+      <children>
+          <TableView fx:id="table_users" centerShape="false" prefHeight="299.0" prefWidth="333.0">
+              <columns>
+                  <TableColumn fx:id="col_num" prefWidth="29.0" style="-fx-alignment: center; -fx-font-weight: bold;" />
+                  <TableColumn fx:id="col_username" editable="false" prefWidth="192.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Name" />
+                  <TableColumn fx:id="col_score" editable="false" minWidth="0.0" prefWidth="110.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="Score" />
+              </columns>
+          </TableView>
+      </children></AnchorPane>
+   <Button layoutX="173.0" layoutY="498.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="43.0" prefWidth="108.0" styleClass="arcade-button" stylesheets="@style.css">
+      <graphic>
+         <ImageView fitHeight="46.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../back.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
+   <ImageView fitHeight="100.0" fitWidth="333.0" layoutX="62.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../coollogo_com-320632719.png" />
+      </image>
+   </ImageView>
+   <Label fx:id="info" alignment="CENTER" contentDisplay="TOP" layoutX="41.0" layoutY="94.0" prefHeight="35.0" prefWidth="383.0" stylesheets="@style.css" text="Top 10 scores in the last 24 hours" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>

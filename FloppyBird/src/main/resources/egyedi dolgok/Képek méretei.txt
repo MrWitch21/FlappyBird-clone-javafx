@@ -1,0 +1,7 @@
+Madár: 56X40
+
+Akadály(cső): 62X2000
+kiválasztáskor (cső): 62X62
+
+Háttér: 288X512
+Kiválasztáskor(háttér): 62X62

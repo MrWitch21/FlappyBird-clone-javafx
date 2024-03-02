@@ -1,0 +1,58 @@
+.arcade-button{
+	-fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 0;
+   
+}
+
+.select-button{
+    -fx-padding:0;
+    -fx-background-radius: 5px;
+    -fx-background-color: white;
+}
+
+#table_users {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #523106;
+    -fx-padding:0;
+}
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; 
+}
+.table-row-cell{
+    -fx-font-size: 14px;
+    -fx-table-cell-border-color:#ffaa80e2;
+}
+.table-row-cell:odd {
+    -fx-background-color: #ff9e6ce2; 
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffb57ce2 ; 
+}
+.table-row-cell:hover {
+    -fx-background-color: #ff944cc8; 
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler{
+    -fx-background-color: #e5621cc8;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: black; 
+}
+@font-face {
+    font-family: 'Flappy Bird';
+    src: url('Flappy_Bird.ttf');
+}
+
+.label{
+    -fx-font-family: 'Flappy Bird';
+}
